@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to The Coders Club.  An in-person event where kids 9+ can go from knowing nothing about code to knowing how to create a full webpage. Members will learn how to code HTML, CSS, & JavaScript. The Coders Club is a weekly event that will start on June 29th and end with summer.">
+    <meta name="keywords" content="Coding Club, Coding Class, OC, Laguna Niguel, Learn to code, HTML, CSS, JS">
+    <title>The Coders Club | Lesson 6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="icon" href="/resources/Copy of The Coders Club.png">
+    <style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+        overflow-x: hidden;
+    }
+
+
+    .welcome-block {
+        background-image: url("/pexels-luis-gomes-546819.jpg");
+        background-size: cover;
+        height: 1200px;
+        margin: 0;
+        color: #f3f3f3;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        
+        
+    }
+
+    .welcome {
+        font-weight: 300;
+        text-align: center;
+        position: absolute;
+        top: 350px;
+       
+        padding: 10px;
+        margin: 0;
+        animation-name: fadeInLoad;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+    }
+
+    .welcome-2 {
+        font-weight: 300;
+        text-align: center;
+        position: absolute;
+        top: 400px;
+       
+        padding: 10px;
+        margin: 0;
+        animation-name: fadeInLoad;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+    }
+
+
+    .logo {
+        position: absolute;
+        height: 300px;
+        top: 375px;
+        
+        animation-name: fadeInLoad;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+
+    }
+
+    @keyframes fadeInLoad {
+        from {
+            opacity: 0;
+        }
+
+        to{ opacity:1}
+    }
+
+    </style>
+    <link rel="icon" src="laptop-icon-png-transparent-11553368414dlflmgculs.png">
+</head>
+<body>
+    <div class="welcome-block">
+        <h1 class="welcome">Lesson Six</h1>
+        <h1 class="welcome-2">JavaScript Objects</h1>
+    <img src="/resources/Copy Of The Coders Club.png" class="logo"><br>
+    </div>
+    <p>To view the lesson: right click, now left click inspect and select console. Messages that include JS-6.html are from the lesson. (This only works on desktop devices)</p>
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" class="license-img"/></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+    <script>
+        console.log("Welcome to lesson six. Object: an object is a way to multiple store variations of data in one space. Let's console the object name:");
+        var theCodersClubLesson = {
+            teacher: "Ethan",
+            lessonNumber: 6,
+            awesome: true
+        }
+        console.log (theCodersClubLesson)
+        console.log("As you can see strings, numbers, and Booleans (True or False) can be stored.")
+        console.log("You can verify that an object is being stored by using type of. Bellow an object is being used:")
+        console.log (typeof(theCodersClubLesson));
+        console.log ("However, if say an a variable is used the value will be different:")
+        var theCodersClubStudents = "Kia"
+        console.log (typeof(theCodersClubStudents))
+        console.log ("You can also directly access the properties of the object like so:" + " Who is teaching the class? " + theCodersClubLesson.teacher + " What lesson are we on? " + theCodersClubLesson.lessonNumber + " Is awesome? " + theCodersClubLesson.awesome);
+        console.log ("You can also change the properties of the object like so: ")
+        theCodersClubLesson.teacher = "Bob";
+        console.log ("Who's teaching the class today? " + theCodersClubLesson.teacher)
+        console.log ("Now, javaScript method. JavaScript script method is the property of an object that contains a function. See below:")
+        var countingObj = {
+            count: function () {console.log(1, 2, 3, 4 , 5, 6, 7, 8, 9, 10)}
+        }
+        countingObj.count()
+        console.log("You can also add JavaScript method to an object like so:")
+        theCodersClubLesson.AwesomeRating = function () {
+            console.log("Awesome rating = 10/10")
+        }
+
+        theCodersClubLesson.AwesomeRating()
+        console.log("Say you want to access object properties within an object; use the 'this' keyword.")
+        var sayHello = {
+            name: "Ethan",
+            age: 13,
+            favoriteThing: "Coding",
+            greet: function () {console.log("Hi! My name is " + this.name + " and I'm " + this.age + " years old. My favorite thing to do is " + this.favoriteThing)}
+        }
+        sayHello.greet()
+        console.log("We can also create objects via a constructor function.")
+        var CreateObj = function () {
+            this.announcement = "This object was created with a function.";
+        }
+        var constructedObject = new CreateObj();
+        console.log (constructedObject.announcement);
+        console.log ("This is very useful if you want to reuse the JavaScript object, but put new data in it. Consider the example below it uses the same object but with different properties: \n Object with the first set of parameters about things on earth:")
+        var EarthThings = function (whatThing, isLiving, whatSize, whatLifeType) {
+            this.thing = whatThing,
+            this.living = isLiving,
+            this.size = whatSize,
+            this.lifeType = whatLifeType
+        }
+
+        var earthThings1 = new EarthThings("Blue Whale", true, "Large", "Animal");
+        console.log (earthThings1)
+        console.log ("In example 2 the same object is being used with different parameters:")
+        var earthThings2 = new EarthThings("Rock", false, "Large", "Non-living");
+        console.log (earthThings2);
+        console.log("We can also access specific properties of the custom object. Example 1: ")
+        console.log (earthThings1.thing);
+        console.log("And example 2:")
+        console.log(earthThings2.thing)
+        console.log("If you want to add or modify JavaScript methods or properties; use the prototype function. See bellow:")
+        var earthThings3 = new EarthThings("Car", false, "Small", "Automobile");
+        EarthThings.prototype.message = "There are many things on Earth"
+        console.log ("As you can see a property has been added:")
+        console.log(earthThings1.message)
+        console.log ("That's it for lesson 6! Quite a hard one!")
+    </script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to The Coders Club.  An in-person event where kids 9+ can go from knowing nothing about code to knowing how to create a full webpage. Members will learn how to code HTML, CSS, & JavaScript. The Coders Club is a weekly event that will start on June 29th and end with summer.">
+    <meta name="keywords" content="Coding Club, Coding Class, OC, Laguna Niguel, Learn to code, HTML, CSS, JS">
+    <title>The Coders Club | Lesson 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="icon" href="/resources/Copy of The Coders Club.png">
+    <style>
+    .welcome-block {
+        background-image: url("/pexels-luis-gomes-546819.jpg");
+        background-size: cover;
+        height: 1200px;
+        margin: 0;
+        color: #f3f3f3;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        
+        
+    }
+
+    .welcome {
+        font-weight: 300;
+        text-align: center;
+        position: absolute;
+        top: 350px;
+       
+        padding: 10px;
+        margin: 0;
+        animation-name: fadeInLoad;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+    }
+
+    .welcome-2 {
+        font-weight: 300;
+        text-align: center;
+        position: absolute;
+        top: 400px;
+       
+        padding: 10px;
+        margin: 0;
+        animation-name: fadeInLoad;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+    }
+
+
+    .logo {
+        position: absolute;
+        height: 300px;
+        top: 375px;
+        
+        animation-name: fadeInLoad;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+
+    }
+
+    @keyframes fadeInLoad {
+        from {
+            opacity: 0;
+        }
+
+        to{ opacity:1}
+    }
+
+    .info {
+        width: 50%;
+        margin: 15px;
+        margin-top: 75px;
+    }
+
+    .form {
+        background-image: url("pexels-markus-spiske-2004161.jpg");
+        width: 47%;
+        height: 500px;
+        position: absolute;
+        left: 52%;
+        top: 900px;
+        background-size: cover;
+        color: black;
+        text-align: center;
+        padding-top: 17%;
+        
+    }
+
+    .inner {
+        background-color: white;
+        width: 75%;
+        height: 500px;
+        position: absolute;
+        left: 13%;
+    }
+
+    input {
+        width: 50%;
+        height: 30px;
+        
+        font-size: medium;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 20%;
+    }
+
+    .middle {
+        margin-top: 20px;
+       
+    }
+
+    .bottom {
+        margin-top: 50px;
+        
+    }
+
+    button {
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        width: 150px;
+        height: 25px;
+        cursor: pointer;
+        margin-top: 20px;
+
+    }
+
+    #success {
+        text-align: center;
+        background-image: url("pexels-luis-gomes-546819.jpg");
+        width: 100%;
+        height: 450px;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+        color: white;
+        padding-top: 25%;
+        margin: 0;
+
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .show {
+        display: inline-block;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .input-info {
+        margin-top: 30px;
+    }
+
+    img {
+        width: auto !important;
+    }
+
+    select {
+        border: none;
+        font-size: larger;
+    }
+
+    @media screen and (max-width: 835px)  {
+        .form {
+            position: absolute;
+            top: 1700px;
+            left: 15px;
+            width: 100%;
+
+        }
+
+        .info {
+            width: 100%;
+            margin-bottom: 10%;
+        }
+    }
+
+    @media screen and (max-width: 653px) {
+        .form {
+            position: absolute;
+            top: 1900px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .form {
+            position: absolute;
+            top: 2100px;
+        }
+    }
+
+    </style>
+    <link rel="icon" src="laptop-icon-png-transparent-11553368414dlflmgculs.png">
+</head>
+<body>
+    <div class="welcome-block">
+        <h1 class="welcome">Lesson One</h1>
+        <h1 class="welcome-2">Setup and Basic HTML Tags</h1>
+    <img src="/resources/Copy of The Coders Club.png" class="logo"><br>
+    </div>
+<h1>Headings</h1><br>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<br><br>
+<h1>Paragraphs</h1>
+<p>A paragraph tag is basically just text!</p>
+<br><br>
+<h1>Italics</h1>
+<i>Italicized</i>
+<br><br>
+<h1>Bold Text</h1>
+<strong>Stands Out!</strong>
+<br><br>
+<h1>Images</h1>
+<img src="/pexels-luis-gomes-546819.jpg">
+
+
+    <br><br><br><br><br>
+    <h1>Put it together and...</h1>
+<h1>Dogs!</h1>
+    <h2>What is a domestic dog?</h2>
+    <p>The term “domestic dog” refers to any of several hundred breeds of dog in the world today. While these animals vary drastically in appearance, every dog—from the Chihuahua to the Great Dane—is a member of the same species, <i>Canis familiaris</i>. This separates domestic dogs from wild canines, such as coyotes, foxes, and wolves.
+<br><br>
+Domestic dogs are mostly kept as pets, though many breeds are capable of surviving on their own, whether it’s in a forest or on city streets. A third of all households worldwide have a dog, according to a 2016 consumer insights study. This makes the domestic dog the most popular pet on the planet.
+<br><br>
+
+</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" class="license-img"/></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+</body>
+</html>

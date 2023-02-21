@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success | The Coders Club</title>
+    <link rel="icon" href="/resources/Copy of The Coders Club.png">
+    <link rel="stylesheet" href="/resources/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="info_styles.css">
+</head>
+<body>
+    
+    <div class="nav-bar" style="height: 100px;">
+        <nav class="desktop-nav">
+            <a href="index.html"><img src="/resources/Copy of The Coders Club.png" class="nav-img"></a>
+            <div class="nav-options">
+                <a href="/about.html"><button class="nav-option">About</button></a>
+                <a href="/classes.html"><button class="nav-option">Classes</button></a>
+                <a href="/contact.html"><button class="nav-option">Contact</button></a>
+            </div>
+        </nav>
+        <nav class="mobile-nav">
+            <a href="index.html"><img src="/resources/Copy of The Coders Club.png" class="nav-img"></a>
+          <div class="nav-options">
+              <button class="d-block mr-0 ml-auto hamburger-menu" id="mobile-menu-enter">
+                  <div class="line"></div><br>
+                   <div class="line"></div><br>
+                  <div class="line"></div>
+                </button>
+          </div>
+        </nav>
+
+        <div class="mobile-menu hidden" id="mobile-menu-id">
+            <ul class="mobile-options">          
+                <a href="/about.html"><li><button class="mobile-option">About</button></li></a>
+                <a href="/classes.html"><li><button class="mobile-option" style="margin-top: 15%; margin-bottom: 15%;">Classes</button></li></a>
+                <a href="/contact.html"><li><button class="mobile-option">Contact</button></li></a>
+            </ul>     
+        </div>
+</div>
+<main  id="main-content">
+    <div class="info-content" id="question-confirm" style="position: relative; top: 0px; min-height: 85vh;">
+        <div class="info-content-blocks" style="min-height: 85vh;">
+    <h1>Your Question is in!</h1>
+    <p>For your reference, this is what you wrote:</p>
+    <div id="wrote"></div>
+   <h2>While you wait why not?</h2>
+   <a href="/classes.html"><button class="standard-button" style="width: 250px; height: 50px;">Check out the classes</button><br><br></a>
+   <a href="/about.html"><button class="standard-button" style="width: 250px; height: 50px;">Read the about page</button><br><br></a>
+   <a href="/index.html"><button class="standard-button" style="width: 250px; height: 50px;">Head to the homepage</button><br><br></a>
+    </div>
+</div>
+    <div class="signup hidden info-content" id="signup-confirm" style="
+    position: relative;
+    line-height: 5.3vh;
+    text-align: center;
+    ">
+        <div class="info-content-blocks">
+            <h1>Success! Your child(ren) is (are) enrolled!</h1>
+            <p>A conformation will be sent to your email address. For your reference below are the details you entered into the signup form. If you need to change <strong>any</strong> of these details please contact me.</p>
+            <div class="signup-infomation">
+                <h2>Parent Name</h2>
+                <li id="parent-name-confirm">Error no parent name</li>
+                <h2>Student Name(s)</h2>
+                <li id="student-names">Error no student(s) name</li>
+                <h2>Parent Email Address</h2>
+                <li id="email-confirm">Error no parent email address found</li>
+                <h2>Parent Phone Number</h2>
+                <li id="parent-phone">Error no parent phone</li><br><br>
+                <p>This info is very important. It may be a good idea to bookmark or</p>
+                <button class="standard-button" onclick="window.print();">Print this info</button><br><br>  
+            </div>
+            <h3>Please remember to bring <span id="confirm-price">$39</span> cash to pay Ethan.</h3>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="subscribe-section">
+            <div class="inner-sub-section">
+            <h2>Subscribe for all emails from The Coders Club!</h2>
+            <input placeholder="Enter your email." required id="subscribe-input"><br><br>
+            <button class="standard-button">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-section left-section">
+            <ul class="footer-list">
+                <h3 class="section-name">About</h3>
+                <a href="/about.html"><li>General Info</li></a>
+            </ul>
+        </div>
+
+        <div class="footer-section" style="position: relative; left: 2.5%;">
+            <ul class="footer-list">
+                <h3 class="section-name" id="center-section">Classes</h3>
+                <a href="/classes.html"><li>General Info</li></a>
+                <a href="/classes.html#classes"><li>Classes</li></a>
+                <a href="/classes.html#times"><li>Class Times</li></a>
+                <a href="/classes.html#payment"><li>Payment</li></a>
+            </ul>
+        </div>
+
+        <div class="footer-section right-section">
+            <ul class="footer-list">
+                <h3 class="section-name">Contact</h3>
+                <a href="/contact.html"><li>Contact</li></a>
+               <li>Email: <a href="mailto:thecoderscluboc@gmail.com">thecoderscluboc@gmail.com</a></li>
+            </ul>
+    </div>
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" class="license-img"/></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+    <p><a href="/privacy.html">Privacy Policy</a> <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__R2_0tVUNEw5UDRDQUZURTBHVEhCOTI2MjNDOElMTy4u">Feedback</a></p> 
+    <div class="socials">
+        <a href="https://www.youtube.com/channel/UCMPYDqKdSFab2gIYgOuMHag"><img src="/resources/YOUTUBE_icon-icons.com_65487-removebg-preview.png" width="50"></a>
+        <a href="https://www.yelp.com/biz/the-coders-club-laguna-niguel-3"><img src="/resources/1217144_yelp_icon.png" width="50"></a>
+    </div>   
+</footer>
+    <script>
+        var signupConfirm = document.getElementById ("signup-confirm");
+        
+        var questionConfirm = document.getElementById ("question-confirm");
+        console.log (signupConfirm)
+        const urlParams = new URLSearchParams(window.location.search);
+        var pageType = urlParams.get("page-type");
+        var signupConfirmCode = function () {
+            var parentNameConfirm = document.getElementById ("parent-name-confirm");
+            parentNameConfirm.textContent = localStorage.getItem("parent_name");
+            var studentNamesConfirm = document.getElementById ("student-names");
+            studentNamesConfirm.textContent = localStorage.getItem("child_names");
+            var parentEmailConfirm = document.getElementById ("email-confirm");
+            parentEmailConfirm.textContent = localStorage.getItem("parent_email");
+            var parentPhoneConfirm = document.getElementById ("parent-phone");
+            parentPhoneConfirm.textContent = localStorage.getItem("parent_phone");
+            
+            
+        };
+        if (pageType === "signup") {
+            console.log ("signup")
+            signupConfirm.classList.remove ("hidden");
+            questionConfirm.classList.add ("hidden")
+            signupConfirmCode()
+        }
+
+        else {
+            console.log ("hello")
+        }
+    </script>
+    <script>
+        var wrote = document.getElementById ("wrote");
+        wrote.innerHTML = sessionStorage.getItem ("Tiny-Data")
+    </script>
+     <!--Page Interaction-->
+ <script src="/resources/main.js"></script>
+</body>
+</html>
